@@ -1,0 +1,609 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap');
+
+:root {
+    --primary: #087f8c;
+    --primary-dark: #05636d;
+    --secondary: #e8f8f8;
+    --dark: #173042;
+    --text: #536673;
+    --light: #f7fbfc;
+    --white: #ffffff;
+    --border: #dcebed;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "DM Sans", sans-serif;
+    color: var(--text);
+    line-height: 1.7;
+    background: var(--white);
+}
+
+h1,
+h2,
+h3,
+h4 {
+    color: var(--dark);
+    font-weight: 700;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+/* =========================
+   TOP BAR
+========================= */
+
+.top-bar {
+    background: var(--dark);
+    color: white;
+    padding: 8px 0;
+    font-size: 13px;
+}
+
+.top-bar a {
+    color: white;
+}
+
+
+/* =========================
+   NAVIGATION
+========================= */
+
+.navbar {
+    padding: 14px 0;
+}
+
+.navbar-brand {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: var(--dark);
+}
+
+.navbar-brand strong {
+    display: block;
+    font-size: 18px;
+}
+
+.navbar-brand small {
+    display: block;
+    font-size: 11px;
+    color: var(--text);
+}
+
+.brand-icon {
+    width: 42px;
+    height: 42px;
+    border-radius: 12px;
+    background: var(--primary);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 23px;
+}
+
+.nav-link {
+    color: var(--dark);
+    font-weight: 500;
+    margin: 0 8px;
+}
+
+.nav-link:hover {
+    color: var(--primary);
+}
+
+
+/* =========================
+   BUTTONS
+========================= */
+
+.btn-primary-custom {
+    background: var(--primary);
+    color: white;
+    border: 2px solid var(--primary);
+    border-radius: 8px;
+    padding: 10px 20px;
+    font-weight: 600;
+}
+
+.btn-primary-custom:hover {
+    background: var(--primary-dark);
+    border-color: var(--primary-dark);
+    color: white;
+}
+
+.btn-outline-custom {
+    color: var(--primary);
+    border: 2px solid var(--primary);
+    border-radius: 8px;
+    padding: 10px 20px;
+    font-weight: 600;
+}
+
+.btn-outline-custom:hover {
+    background: var(--primary);
+    color: white;
+}
+
+
+/* =========================
+   HERO
+========================= */
+
+.hero-section {
+    background:
+        radial-gradient(circle at 90% 20%, #d9f4f5 0, transparent 35%),
+        linear-gradient(135deg, #f7fcfc, #edf8f9);
+
+    padding: 100px 0;
+}
+
+.hero-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 7px;
+    background: #dff5f5;
+    color: var(--primary-dark);
+    padding: 7px 13px;
+    border-radius: 30px;
+    font-size: 13px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.hero-section h1 {
+    font-family: "Playfair Display", serif;
+    font-size: clamp(48px, 6vw, 76px);
+    line-height: 1.05;
+    margin-bottom: 25px;
+}
+
+.hero-section h1 span {
+    color: var(--primary);
+}
+
+.hero-text {
+    max-width: 600px;
+    font-size: 18px;
+    margin-bottom: 25px;
+}
+
+.doctor-highlight {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 30px;
+}
+
+.doctor-small-icon {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--primary);
+    font-size: 23px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, .08);
+}
+
+.doctor-highlight strong {
+    display: block;
+    color: var(--dark);
+}
+
+.doctor-highlight span {
+    font-size: 14px;
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+
+.hero-card {
+    background: white;
+    border-radius: 24px;
+    padding: 40px;
+    box-shadow: 0 20px 60px rgba(14, 68, 80, .12);
+}
+
+.hero-card-icon {
+    width: 65px;
+    height: 65px;
+    border-radius: 18px;
+    background: var(--secondary);
+    color: var(--primary);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.hero-card h3 {
+    font-family: "Playfair Display", serif;
+    font-size: 30px;
+}
+
+.hero-services {
+    margin-top: 25px;
+}
+
+.hero-services div {
+    padding: 7px 0;
+}
+
+.hero-services i {
+    color: var(--primary);
+    margin-right: 7px;
+}
+
+
+/* =========================
+   GENERAL SECTIONS
+========================= */
+
+.section-padding {
+    padding: 90px 0;
+}
+
+.section-heading {
+    max-width: 700px;
+    margin: auto;
+}
+
+.section-heading span,
+.section-label {
+    color: var(--primary);
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+}
+
+.section-heading h2 {
+    font-family: "Playfair Display", serif;
+    font-size: 42px;
+    margin: 10px 0 15px;
+}
+
+
+/* =========================
+   INFO CARDS
+========================= */
+
+.info-card {
+    padding: 35px;
+    border: 1px solid var(--border);
+    border-radius: 18px;
+    height: 100%;
+    transition: .3s;
+}
+
+.info-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, .07);
+}
+
+.info-icon {
+    width: 58px;
+    height: 58px;
+    background: var(--secondary);
+    color: var(--primary);
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+
+
+/* =========================
+   TREATMENTS
+========================= */
+
+.treatments-section {
+    background: var(--light);
+}
+
+.treatment-card {
+    background: white;
+    padding: 30px;
+    border-radius: 18px;
+    height: 100%;
+    border: 1px solid var(--border);
+    transition: .3s;
+}
+
+.treatment-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, .06);
+}
+
+.treatment-icon {
+    width: 55px;
+    height: 55px;
+    background: var(--secondary);
+    color: var(--primary);
+    border-radius: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+
+/* =========================
+   DOCTOR
+========================= */
+
+.doctor-section {
+    background: white;
+}
+
+.doctor-photo-placeholder {
+    min-height: 450px;
+    border-radius: 25px;
+    background: linear-gradient(145deg, #e7f6f7, #d4eef0);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: var(--primary);
+    font-size: 60px;
+}
+
+.doctor-photo-placeholder span {
+    font-size: 15px;
+    margin-top: 10px;
+}
+
+.doctor-section h2 {
+    font-family: "Playfair Display", serif;
+    font-size: 48px;
+    margin-top: 8px;
+}
+
+.doctor-section h5 {
+    color: var(--primary);
+}
+
+.doctor-intro {
+    font-size: 17px;
+    margin: 20px 0;
+}
+
+.doctor-details > div {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 18px;
+}
+
+.doctor-details i {
+    color: var(--primary);
+    font-size: 20px;
+}
+
+.doctor-details strong,
+.doctor-details span {
+    display: block;
+}
+
+
+/* =========================
+   APPOINTMENT
+========================= */
+
+.appointment-section {
+    padding: 90px 0;
+    background: var(--secondary);
+}
+
+.appointment-card {
+    background: white;
+    border-radius: 25px;
+    padding: 45px;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, .08);
+}
+
+.form-control {
+    border: 1px solid var(--border);
+    padding: 12px 14px;
+    border-radius: 8px;
+}
+
+.form-control:focus {
+    border-color: var(--primary);
+    box-shadow: 0 0 0 .2rem rgba(8, 127, 140, .12);
+}
+
+label {
+    color: var(--dark);
+    font-weight: 600;
+    margin-bottom: 7px;
+}
+
+
+/* =========================
+   CONTACT
+========================= */
+
+.contact-section {
+    background: var(--light);
+}
+
+.contact-card {
+    background: white;
+    border: 1px solid var(--border);
+    border-radius: 18px;
+    padding: 30px;
+    height: 100%;
+}
+
+.contact-icon {
+    width: 55px;
+    height: 55px;
+    border-radius: 14px;
+    background: var(--secondary);
+    color: var(--primary);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 23px;
+    margin-bottom: 20px;
+}
+
+.contact-card a {
+    color: var(--primary);
+    font-weight: 600;
+}
+
+.open-status {
+    color: var(--primary);
+    font-size: 14px;
+}
+
+.open-status i {
+    font-size: 8px;
+    margin-right: 5px;
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+footer {
+    background: var(--dark);
+    color: #c8d7dd;
+    padding: 50px 0 20px;
+}
+
+footer h4 {
+    color: white;
+}
+
+footer hr {
+    border-color: rgba(255, 255, 255, .15);
+}
+
+.footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+    font-size: 13px;
+}
+
+
+/* =========================
+   WHATSAPP FLOAT
+========================= */
+
+.whatsapp-float {
+    position: fixed;
+    right: 25px;
+    bottom: 25px;
+
+    width: 60px;
+    height: 60px;
+
+    background: #25D366;
+    color: white;
+
+    border-radius: 50%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 30px;
+
+    box-shadow: 0 8px 25px rgba(0, 0, 0, .2);
+
+    z-index: 999;
+}
+
+.whatsapp-float:hover {
+    color: white;
+    transform: scale(1.08);
+}
+
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 991px) {
+
+    .hero-section {
+        padding: 70px 0;
+    }
+
+    .hero-card {
+        margin-top: 40px;
+    }
+
+    .navbar-nav {
+        padding-top: 15px;
+    }
+
+}
+
+@media (max-width: 767px) {
+
+    .top-bar {
+        text-align: center;
+    }
+
+    .top-bar .container {
+        flex-direction: column;
+        gap: 4px;
+    }
+
+    .section-padding {
+        padding: 65px 0;
+    }
+
+    .section-heading h2 {
+        font-size: 34px;
+    }
+
+    .hero-section h1 {
+        font-size: 48px;
+    }
+
+    .appointment-card {
+        padding: 25px;
+    }
+
+    .doctor-photo-placeholder {
+        min-height: 350px;
+    }
+
+    .doctor-section h2 {
+        font-size: 40px;
+    }
+
+    .footer-bottom {
+        flex-direction: column;
+        text-align: center;
+    }
+
+}
